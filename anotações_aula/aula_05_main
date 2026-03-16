@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Scanner sc2 = new Scanner(System.in);
+        Scanner ler = new Scanner(System.in);
+        Pessoa p = new Pessoa();
+        Aluno ap = new Aluno();
+
+        System.out.println("O nome da pessoa é:");
+        p.setNome(sc2.nextLine());
+
+        System.out.println("A idade da pessoa é:");
+        p.setIdade(sc.nextInt());
+
+        System.out.println("O nome do aluno é:");
+        ap.setNome(sc2.nextLine());
+
+        System.out.println("A idade do aluno é:");
+        ap.setIdade(sc.nextInt());
+
+
+        System.out.println("A primeira nota do aluno é:");
+        ap.setNota1(sc.nextDouble());
+
+        System.out.println("A segunda nota do aluno é:");
+        ap.setNota2(sc.nextDouble());
+
+        System.out.println("A terceira nota do aluno é:");
+        ap.setNota3(sc.nextDouble());
+
+        ap.calcularMedia();
+
+        System.out.println("O nome da pessoa é:"+p.getNome());
+        System.out.println("A idade da pessoa é:"+p.getIdade());
+        System.out.println("O nome do aluno é:"+ap.getNome());
+        System.out.println("A idade do aluno é:"+ap.getIdade());
+        System.out.println("A média é:"+ap.getMedia());
+
+        ler.close();
+
+
+    }
+}
